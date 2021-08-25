@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/all.min.css">
+    <title>catalog</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -118,65 +117,80 @@
         </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="container banner-block">
-                <div class="banner-text">
-                    <p class="the-brand">THE BRAND</p>
-                    <p class="text-fashion">OF LUXERIOUS <span class="span-fashion">FASHION</span></p>
+        <div class="baner-catalog">
+            <div class="container baner-catalog">
+                <div class="baner-catalog-left">
+                    <h3 class="catalog-heading">new arrivals</h3>
+                </div>
+                <div class="baner-catalog-rihgt">
+                    <div class="baner-breadcrumbs">HOME / MEN / <span class="breadcrumbs-red">NEW ARRIVALS</span> </div>
                 </div>
             </div>
-        </section>
-        <section class="offer-news">
-            <div class="container offer">
-                <div class="card-top">
-                    <div class="card-row1">
-                        <div class="card-row1 women-item">
-                        </div>
-                        <a class="card-row1" href="#">
-                            <h3 class="heading">30% off<br>
-                                <span class="heading-red">for women</span>
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="card-row1">
-                        <div class="card-row1 men-item">
-                        </div>
-                        <a class="card-row1" href="#">
-                            <h3 class="heading">hot deal<br>
-                                <span class="heading-red">for men</span>
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="card-row1">
-                        <div class="card-row1 kids-item">
-                        </div>
-                        <a class="card-row1" href="#">
-                            <h3 class="heading">new arrivals<br>
-                                <span class="heading-red">for kids</span>
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-bottom">
-                    <div class="card-row2">
-                        <div class="card-row2 acces-item">
-                        </div>
-                        <a class="card-row2" href="#">
-                            <h3 class="heading">luxirrous & trendy<br>
-                                <span class="heading-red">accesories</span>
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="search-catalog">
+            <div class="search-catalog-filter"></div>
+            <div class="search-catalog-size"></div>
+        </div>
+        <div class="filter">
+            <input class="filter-input" type="checkbox" id="switch-filter">
+            <label class="filter-btn" for="switch-filter">
+                <span>filter</span>
+                <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                </svg>
+            </label>
 
-        </section>
+            <ul class="filter-list">
+                <li class="filter-list-item">
+                    <a href="#">category</a>
+                </li>
+                <ul class="filter-sublist">
+                    <li class="filter-sublist-item">
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Bags</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Denim</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Hoodies &amp;&nbsp;Sweatshirts</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Jackets &amp;&nbsp;Coats</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Polos</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Shirts</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Shoes</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Sweaters &amp;&nbsp;Knits</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">T-Shirts</a>
+                    </li>
+                    <li class="filter-sublist-item">
+                        <a href="#">Tanks</a>
+                    </li>
+                </ul>
+                <li class="filter-list-item">
+                    <a href="#">brand</a>
+                </li>
+                <li class="filter-list-item">
+                    <a href="#">designer</a>
+                </li>
+            </ul>
+        </div>
+
         <section class="product">
             <div class="container product">
-                <div class="product-txt">
-                    <h2 class="product-txt-heading">Fetured Items</h2>
-                    <p>Shop for items based on what we featured in this week</p>
-                </div>
                 <div class="item-box">
                     <div class="item">
                         <a class="item-link" href="">
@@ -197,7 +211,7 @@
                     </div>
                     <div class="item">
                         <a class="item-link" href="">
-                            <img class="item-pic" src="img/item2.png" alt="photo">
+                            <img class="item-pic" src="img/item7.png" alt="photo">
                             <div class="item-txt">
                                 <p class="item-desc">ellery x m'o capsule</p>
                                 <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -249,7 +263,7 @@
                     </div>
                     <div class="item">
                         <a class="item-link" href="">
-                            <img class="item-pic" src="img/item5.png" alt="photo">
+                            <img class="item-pic" src="img/item9.png" alt="photo">
                             <div class="item-txt">
                                 <p class="item-desc">ellery x m'o capsule</p>
                                 <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -267,7 +281,60 @@
                     </div>
                     <div class="item">
                         <a class="item-link" href="">
-                            <img class="item-pic" src="img/item6.png" alt="photo">
+                            <img class="item-pic" src="img/item10.png" alt="photo">
+                            <div class="item-txt">
+                                <p class="item-desc">ellery x m'o capsule</p>
+                                <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a class="add" href="">
+                                <img class="add-cart" src="img/ic-w-basc.svg" alt="cart">
+                                <p>Add to Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item-link" href="">
+                            <img class="item-pic" src="img/item11.png" alt="photo">
+                            <div class="item-txt">
+                                <p class="item-desc">ellery x m'o capsule</p>
+                                <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a class="add" href="">
+                                <img class="add-cart" src="img/ic-w-basc.svg" alt="cart">
+                                <p>Add to Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item-link" href="">
+                            <img class="item-pic" src="img/item12.png" alt="photo">
+                            <div class="item-txt">
+                                <p class="item-desc">ellery x m'o capsule</p>
+                                <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a class="add" href="">
+                                <img class="add-cart" src="img/ic-w-basc.svg" alt="cart">
+                                <p>Add to Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a class="item-link" href="">
+                            <img class="item-pic" src="img/item13.png" alt="photo">
                             <div class="item-txt">
                                 <p class="item-desc">ellery x m'o capsule</p>
                                 <p class="item-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -283,13 +350,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="all-product">
-                <a href="#" class="button-product">
-                    <p>Browse All Product</p>
-                </a>
+
             </div>
         </section>
+
         <section class="advansing">
             <div class="container advansing">
                 <div class="advansing-row">
@@ -375,6 +439,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
