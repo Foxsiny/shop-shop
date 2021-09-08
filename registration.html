@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart</title>
+    <title>registration</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -131,86 +132,78 @@
 
         </div>
     </section>
-    <main class="shopping-cart">
-        <section class="shopping-cart container">
-            <div class="cart-product-wrp">
-                <div class="cart-item">
-                    <div class="shopping-btn-wrp">
-                        <button class="shopping-btn"></button>
-                    </div>
-                    <div class="cart-product-inner">
-                        <img class="cart-product-pic" src="./img/item3.png" alt="photo">
-                        <div class="shopping-cart-item-txt">
-                            <p class="shopping-cart-item-desc">mango people t-shirt</p>
-                            <p class="shopping-cart-item-price">Price:<span> </span><span class="price">$300</span></p>
-                            <p class="shopping-cart-item-color">Color: Red</p>
-                            <p class="shopping-cart-item-size">Size: XI</p>
-                            <form class="shopping-cart-item-quantity" action="#">
-                                <label for="shopping">Quantity:</label>
-                                <input class="shopping-cart-item-input" id="shopping" type="namber" size="2" name="num"
-                                    min="1" max="10" value="1">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <div class="shopping-btn-wrp">
-                        <button class="shopping-btn"></button>
-                    </div>
-                    <div class="cart-product-inner">
 
-                        <img class="cart-product-pic" src="./img/item7.png" alt="photo">
-
-                        <div class="shopping-cart-item-txt">
-                            <p class="shopping-cart-item-desc">mango people t-shirt</p>
-                            <p class="shopping-cart-item-price">Price:<span> </span><span class="price">$300</span></p>
-                            <p class="shopping-cart-item-color">Color: Red</p>
-                            <p class="shopping-cart-item-size">Size: XI</p>
-                            <form class="shopping-cart-item-quantity" action="#">
-                                <label for="shopping">Quantity:</label>
-                                <input class="shopping-cart-item-input" id="shopping" type="namber" size="2" name="num"
-                                    min="1" max="10" value="1">
-                            </form>
-                        </div>
-                    </div>
+    <main class="registration">
+        <div class="registration container">
+            <form action="#" class="registration-form">
+                <label class="registration-label" for="reg-name">Your Name
+                    <input class="registration-input" type="name" id="reg-name" placeholder="First Name">
+                    <input class="registration-input" type="name" id="reg-name" placeholder="Last Name">
+                </label>
+                <label class="registration-gender" for="reg-gender">
+                    <input class="registration-male" type="radio" nama="gender" id="reg-gender">Male
+                    <input class="registration-female" type="radio" name="gender" id="reg-gender">Female
+                </label>
+                <label for="registration-label">Login details
+                    <input class="registration-input" type="email" id="registration-login" placeholder="Email">
+                    <input class="registration-input" type="password" id="registration-login" placeholder="Password">
+                    <p class="registration-txt">Please use 8 or more characters, with at least 1 number and a mixture of
+                        uppercase and lowercase
+                        letters</p>
+                </label>
+                <input class="registration-submit" type="submit" value="join now    &#8594">
+            </form>
+            <div class="loyalty-program">
+                <h3 class="loyalty-heading">loyalty has its perks</h3>
+                <p class="loyalty-text">Get in on the loyalty program where you can earn points and unlock serious
+                    perks. Starting with these
+                    as soon as you join:</p>
+                <div class="loyalty-txt">
+                    <svg class="loyalty-svg" width="20" height="16" viewBox="0 0 20 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" />
+                    </svg>
+                    <p class="loyalty-txt">15% off welcome offer</p>
                 </div>
 
-                <div class="shopping-cart-button">
-                    <div class="shopping-control">
-                        <a href="#" class="button-shopping">
-                            <p>clear shopping cart</p>
-                        </a>
-                    </div>
-                    <div class="shopping-control">
-                        <a href="#" class="button-shopping">
-                            <p>continue shopping</p>
-                        </a>
-                    </div>
+                <div class="loyalty-txt">
+                    <svg class="loyalty-svg" width="20" height="16" viewBox="0 0 20 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" />
+                    </svg>
+                    <p>Free shipping, returns and exchanges on all orders</p>
                 </div>
+                <div class="loyalty-txt">
+                    <svg class="loyalty-svg" width="20" height="16" viewBox="0 0 20 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" />
+                    </svg>
+                    <p>$10 off a purchase on your birthday</p>
+                </div>
+                <div class="loyalty-txt">
+                    <svg class="loyalty-svg" width="20" height="16" viewBox="0 0 20 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" />
+                    </svg>
+                    <p>Early access to products</p>
+                </div>
+                <div class="loyalty-txt">
+                    <svg class="loyalty-svg" width="20" height="16" viewBox="0 0 20 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" />
+                    </svg>
+                    <p>Exclusive offers & rewards</p>
+                </div>
+                <!--<div class="shopping-btn-wrp">
+                    <button class="shopping-btn"></button>
+                </div>-->
             </div>
-
-            <div class="shopping-cart-option-wrp">
-                <form class="shopping-cart-shipping" action="#">
-                    <label class="shipping-address-label" for="shipping">shipping adress</label>
-                    <input class="shipping-address-input-bangladesh" type="address" id="shipping"
-                        placeholder="Bangladesh">
-                    <input class="shipping-address-input" type="address" id="shipping" placeholder="State">
-                    <input class="shipping-address-input" type="address" id="shipping" placeholder="Postcode / Zip">
-                    <input class="shipping-address-submit" type="submit" value="get a quote">
-                </form>
-                <div class="shopping-cart-total">
-                    <p class="shopping-cart-total-txt">sub total $900</p>
-                    <p class="shopping-cart-total-text">grand total<span> </span><span class="total-sum">$900</span></p>
-                    <div class="total-line"></div>
-                    <div class="shopping-checkout">
-                        <a href="#" class="button-checkout">
-                            <p>proceed to checkout</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
     <footer class="footer-page">
         <div class="footer-subscribe">
