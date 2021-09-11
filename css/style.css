@@ -13,24 +13,25 @@ body {
 }
 
 .header {
-    height: 75px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-    background-color:  #222222;;
+  height: 75px;
+  display: flex;
+  background-color:  #222222;;
 }
-.header-flex {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
+.header-block{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  height: 75px;
 }
 .header-search {
-    display: flex;
-    margin: 0 0 0 30px
-   
+  display: flex;
+  margin: 0 0 0 41px;
+ 
 }
 
 .header-search-item{
@@ -246,45 +247,65 @@ body {
 .bascet-btn{
   border: none;
   background-color: transparent;
+  position: relative;
 }
 .bascet-btn svg{
-  fill: #E8E8E8
+  fill: #E8E8E8;
+  padding-right: 8px;
+}
+.bascet-txt{
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  position: absolute;
+  border-radius: 50%;
+  top: -8px;
+  right: 0px;
 }
 .banner {
-    height: 764px;
-    background: #F1E4E6;
+  min-height: 764px;
+  background: #F1E4E6;
+  display: flex;
+  justify-content: space-between;
 }
 
 .banner-block {
     height: 100%;
     background-repeat: no-repeat;
     background-image: url('../img/baner.png');
+    background-size: cover;
     background-position-x: -225px;
+    width: 50%
 }
 
 .the-brand {
-    color: #222222;
-    font-size: 60px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 45px;
-    margin-bottom: 20px;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
 }
+
 
 .text-fashion {
-    color: #222222;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 31px;
-
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 38px;
 }
 
+
 .banner-text {
-    margin-top: 290px;
-    border-left: 12px solid #f16d7f;
-    float: right;;
-    padding-left: 12px;
+  margin-top: 290px;
+  border-left: 12px solid #f16d7f;
+  padding-left: 12px;
+  height: 92px;
+
 }
 
 .span-fashion {
@@ -294,20 +315,21 @@ body {
 .offer{
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
   flex-wrap: wrap;
 }
 
 .offer-card-row1 {
   display: flex;
-  width: 360px;
-  height: 260px;
+  max-width: 360px;
+  width: 100%;
+  min-height: 260px;
   z-index: 1;
-  position: relative;
   text-decoration: none;
+  padding-top: 65px;
 }
   .women-item {
     background-image: url('../img/offer-w.png');
+    background-size: cover;
     position: absolute;
     filter: brightness(0.5);
   }
@@ -325,7 +347,7 @@ body {
   
   display: flex;
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   z-index: 1;
   position: relative;
   text-decoration: none;
@@ -496,7 +518,7 @@ body {
   color: #ffffff;
 }
 .features{
-  height: 341px;
+  min-height: 341px;
   background: #222224;
 }
 .features-row{
@@ -629,32 +651,50 @@ body {
   outline: none;
 }
 .widget{
-    height: 79px;
-    background: #222224;
-    display: flex;
-    justify-content: space-between;
+  height: 79px;
+  background: #222224;
+  display: flex;
+  justify-content: space-between;
 }
 .widget-text{
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;
-    color: #FBFBFB;
-    margin: auto;
-    margin-left: 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #FBFBFB;
+  margin: auto;
+  margin-left: 0;
+  
 }
 .widget-icon{
-    margin: auto;
-    margin-right: 0;
-    
+  margin: auto;
+  margin-right: 0;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .fab{
-    color:white;
-    font-size: 40px;
-    text-decoration: none;
-    margin-left: 5px;
+  color:white;
+  font-size: 40px;
+  text-decoration: none;
+  
+  display: block;
+  margin: 0 5px 0 0;
+  
 }
-
-
+.fa-instagram-square{
+  color: #F16D7F;
+  z-index: 1;
+  
+}
+.widget-icon-inst{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  right: 88px;
+  z-index: 0;
+}
 /* page catalog*/
 
 .breadcrumbs{
@@ -683,20 +723,12 @@ body {
 .breadcrumbs-pagination-item{
   display: inline;
 } 
-  .crumb2::before{
-    content: "/\00a0";
-    color: #636363;
+.breadcrumbs-pagination-item:last-child{
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-  .crumb2::after{
-    padding: 0 0 0 3px;
-    content: "/\00a0";
-    color: #636363;
-}
-  .crumb3{
-    color: #F16D7F;
-    text-transform: uppercase;
-    font-weight: 700;
-}
+
 .breadcrumbs-pagination-link{
   text-decoration: none;
   color: #636363;
@@ -730,9 +762,12 @@ button:focus {
   padding: 13px 16px 16px 16px;
   box-sizing: border-box;
   background: #FFFFFF;
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  /*box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);*/
   position: absolute;
   z-index: 1;
+}
+.filter:hover{
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 
@@ -1032,6 +1067,7 @@ button:focus {
 }
 .options{
   display: flex;
+  padding: 13px 0 0 0;
 }
 
 .pagination-wrp{
@@ -1788,4 +1824,41 @@ text-transform: uppercase;
   fill:black;
   font-weight: 400;
   margin: 0 22px 0 0;
+}
+@media only screen and (max-width:768px){
+  .container{
+    max-width:768px
+   }
+  .banner{
+    min-height: 368px;
+  }
+  .banner-block{
+    background-position-x:0;
+  }
+  .banner-text{
+    margin: 138px 33px 151px 0;
+  }
+  .the-brand{
+    font-size: 44px;
+  }
+  .text-fashion{
+    font-size: 24px;
+    line-height: 29px;
+  } 
+  .offer-card-row1{
+    max-width: 232px;
+    min-height: 168px;
+    padding-top: 20px;
+  }
+  .offer{
+    
+    justify-content: space-around;
+  } 
+  .acces{
+    margin-top: 20px;
+  } 
+  .offer-card-row2{
+    min-height: 116px;
+    max-width: 743px;
+  }
 }
