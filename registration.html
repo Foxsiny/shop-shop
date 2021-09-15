@@ -14,10 +14,10 @@
 
 <body>
     <header class="header">
-        <div class="container header-flex">
+        <div class="container header-block">
             <div class="header-left">
                 <a class="header-logo" href="#">
-                    <img src="./img/Group 2.svg" alt="logo">
+                    <img src="./img/logo.svg" alt="logo">
                 </a>
                 <form class="header-search" action="#">
                     <label class="header-search-item-label" for="search-bi">
@@ -36,8 +36,12 @@
                     </label>
                     <input id="menu-switch" type="checkbox">
                     <ul class="menu-list">
-                        <a href="#" class="menu-list-close-btn"></a>
-                        <span class="menu-list-title">menu</span>
+                        <li>
+                            <a href="#" class="menu-list-close-btn"></a>
+                        </li>
+                        <li>
+                            <span class="menu-list-title">menu</span>
+                        </li>
                         <li class="menu-list-item">
                             <a href="#">man</a>
                             <ul class="menu-sublist">
@@ -135,23 +139,31 @@
     <main class="registration">
         <div class="registration container">
             <form action="#" class="registration-form">
-                <label class="registration-label" for="reg-name">Your Name
-                    <input class="registration-input" type="name" id="reg-name" placeholder="First Name">
-                    <input class="registration-input" type="name" id="reg-name" placeholder="Last Name">
-                </label>
-                <label class="registration-gender" for="reg-gender">
-                    <input class="registration-male" type="radio" nama="gender" id="reg-gender">Male
-                    <input class="registration-female" type="radio" name="gender" id="reg-gender">Female
-                </label>
-                <label for="registration-label">Login details
-                    <input class="registration-input" type="email" id="registration-login" placeholder="Email">
-                    <input class="registration-input" type="password" id="registration-login" placeholder="Password">
-                    <p class="registration-txt">Please use 8 or more characters, with at least 1 number and a mixture of
-                        uppercase and lowercase
-                        letters</p>
-                </label>
-                <input class="registration-submit" type="submit" value="join now    &#8594">
+                <fieldset class="registration-fieldset">
+                    <legend class="registration-legend">Your Name
+                        <input class="registration-input" type="name" id="first-name" placeholder="First Name">
+                        <input class="registration-input" type="name" id="last-name" placeholder="Last Name">
+                    </legend>
+                </fieldset>
+                <div class="registration-gender">
+                    <input class="registration-male" type="radio" name="radio-btn" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input class="registration-female" type="radio" name="radio-btn" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <fieldset class="registration-fieldset">
+                    <legend>Login details
+                        <input class="registration-input" type="email" id="email-login" placeholder="Email">
+                        <input class="registration-input" type="password" id="password-login" placeholder="Password">
+                    </legend>
+                </fieldset>
+                <p class="registration-txt">Please use 8 or more characters, with at least 1 number and a
+                    mixture of
+                    uppercase and lowercase
+                    letters</p>
+                <input class="registration-submit" type="submit" value="join now    &#8594;">
             </form>
+
             <div class="loyalty-program">
                 <h3 class="loyalty-heading">loyalty has its perks</h3>
                 <p class="loyalty-text">Get in on the loyalty program where you can earn points and unlock serious
@@ -237,10 +249,26 @@
                     <span>&copy; 2021 Brand All Rights Reserved.</span>
                 </div>
                 <div class="widget-icon">
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-instagram-square"></a>
-                    <a href="#" class="fab fa-pinterest-square"></a>
-                    <a href="#" class="fab fa-twitter-square"></a>
+                    <div class="widget-icon-item-white">
+                        <div class="widget-icon-item-black">
+                            <a href="#" class="fab fa-facebook-square"></a>
+                        </div>
+                    </div>
+                    <div class="widget-icon-item-white">
+                        <div class="widget-icon-item-black">
+                            <a href="#" class="fab fa-instagram-square"></a>
+                        </div>
+                    </div>
+                    <div class="widget-icon-item-white">
+                        <div class="widget-icon-item-black">
+                            <a href="#" class="fab fa-pinterest-square"></a>
+                        </div>
+                    </div>
+                    <div class="widget-icon-item-white">
+                        <div class="widget-icon-item-black">
+                            <a href="#" class="fab fa-twitter-square"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
